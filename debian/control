@@ -1,0 +1,25 @@
+Source: emoji-keyboard
+Section: utils
+Priority: extra
+Maintainer: Lorenzo Carbonell Cerezo <lorenzo.carbonell.cerezo@gmail.com>
+Build-Depends: debhelper (>= 9), python3, python3-setuptools
+Standards-Version: 3.9.4
+Homepage: http://www.atareao.es
+
+Package: emoji-keyboard
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+    python3,
+    python3-gi,
+    gir1.2-gtk-3.0,
+    gir1.2-glib-2.0,
+    gir1.2-gdkpixbuf-2.0,
+    gir1.2-appindicator3-0.1,
+    python3-xlib
+Description: Virtual keyboard-like emoji picker for linux.
+ Selecting `Show Keyboard` from the app indicator menu or, if your desktop
+ environment supports it, middle-clicking app indicator will toggle the visibility
+ of the picker. When the picker is visible simply clicking on emoji will type it
+ into focused application.
+ If you want to toggle the visibility of the picker with a hotkey, use your
+ desktop environment's native hotkey utility to assign a hotkey to `emoji-keyboard`.
